@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package protos;
 
+import "google/api/annotations.proto";
+
 option go_package = "grpc-gateway-funnzy-dev/pbs";
 
 message HelloRequest {
@@ -13,5 +15,9 @@ message HelloResponse {
 }
 
 service Hello {
-  rpc Hello (HelloRequest) returns (HelloResponse) {}
+  rpc Hello (HelloRequest) returns (HelloResponse) {
+    option (google.api.http) = {
+      get: "/api/v1/hello"
+    };
+  }
 }
