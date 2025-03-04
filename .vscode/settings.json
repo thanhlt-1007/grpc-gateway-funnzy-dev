@@ -1,9 +1,14 @@
 {
-    "go.goroot": "${env:HOME}/.gvm/gos/go1.24.0",
-    "go.formatTool": "gofumpt",
-    "go.lintTool": "golangci-lint",
-    "go.lintOnSave": "file",
-    "[go]": {
-        "editor.formatOnSave": true,
-    },
+  "go.goroot": "${env:HOME}/.gvm/gos/go1.24.0",
+  "go.formatTool": "gofumpt",
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "file",
+  "[go]": {
+    "editor.formatOnSave": true,
+  },
+  "protoc": {
+    "options": [
+      "--proto_path=protos",
+    ]
+  },
 }
