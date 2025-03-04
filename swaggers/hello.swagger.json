@@ -16,7 +16,7 @@
     "application/json"
   ],
   "paths": {
-    "/api/v1/hello": {
+    "/api/v1/hello/{message}": {
       "get": {
         "operationId": "Hello_Hello",
         "responses": {
@@ -36,8 +36,8 @@
         "parameters": [
           {
             "name": "message",
-            "in": "query",
-            "required": false,
+            "in": "path",
+            "required": true,
             "type": "string"
           }
         ],
