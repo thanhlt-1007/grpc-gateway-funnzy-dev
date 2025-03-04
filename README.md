@@ -60,6 +60,20 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.5.1
 protoc-gen-go-grpc --version # protoc-gen-go-grpc 1.5.1
 ```
 
+## protoc-gen-grpc-gateway
+
+```sh
+go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway@v2.26.2
+protoc-gen-grpc-gateway --version # Version v2.26.2
+```
+
+## protoc-gen-openapiv2
+
+```sh
+go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2@v2.26.2
+protoc-gen-openapiv2 --version # Version v2.26.2
+```
+
 ## go get
 
 ```sh
